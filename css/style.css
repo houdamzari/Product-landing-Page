@@ -3,11 +3,12 @@ body {
   margin-left: 50px;
   margin-right: 50px;
   background-color: #eeeeee;
+
 }
 
 @media only screen and (max-width: 600px) {
   body {
-    background-color: lightblue;
+    background-color: #eeeeee;
   }
 }
 #header{
@@ -34,6 +35,7 @@ body {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  margin:  auto 100px;
 }
 .nav-links{
   display: flex;
@@ -50,6 +52,7 @@ body {
   text-align: center;
   /* font-size: bold; */
     font-family: 'Lato', sans-serif;
+    margin-top: 50px;
 
 }
 .email-form{
@@ -100,6 +103,7 @@ width: fit-content;
   margin-top: 50px;
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 iframe{
@@ -114,4 +118,55 @@ iframe{
 #video > iframe{
   max-width: 560px;
   width: 100%;
+}
+.product{
+  
+  display: flex;
+  flex-direction: column;
+   
+  gap: 20px;
+  border :  1px solid #000;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 12px;
+    overflow: hidden;
+
+}
+.level{
+  padding:20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  font-weight: bolder;
+  background-color: #f3bf0c;
+}
+.product-block{
+   display: flex;
+   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+li{
+  list-style: none;
+  margin-bottom: 10px;
+}
+ol{
+  margin: 0;
+  padding: 0;
+}
+.product-btn{
+  background-color: #f3bf0c;
+  padding: 10px 20px;
+  border: 0;
+  font-weight: 400;
+  font-size: 1em;
+  margin: 15px;
+}
+#pricing{
+   display: flex;
+   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }

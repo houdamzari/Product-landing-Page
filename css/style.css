@@ -5,21 +5,39 @@ body {
   background-color: #eeeeee;
 }
 
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+#header{
+    position: fixed;
+    top: 0;
+    min-height: 75px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eee;
+    width: 100%;
+}
+
 .header-img {
     width: 250px;
     height: 50px;
 }
+
 .navbar{
+  padding-right: 20px;
+  padding-left: 20px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 20px;
 }
 .nav-links{
   display: flex;
   gap: 40px;
-
 }
 .nav-link{
   font-size: larger;
@@ -75,5 +93,25 @@ width: fit-content;
 #hero-section{
   display: flex;
   flex-direction: column;
+}
 
+
+#how-it-works{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+iframe{
+  height: 315px;
+  width: 560px;
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+}
+
+#video > iframe{
+  max-width: 560px;
+  width: 100%;
 }

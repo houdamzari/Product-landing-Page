@@ -19,32 +19,34 @@
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
     <header id="header">
+      <div>
+        <img
+          class="header-img"
+          id="header-img"
+          src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+          alt="logo"
+        />
+      </div>
       <nav id="nav-bar" class="navbar">
-        <div>
-          <img
-            class="header-img"
-            id="header-img"
-            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
-            alt="logo"
-          />
-        </div>
         <div class="nav-links">
-          <a href="" class="nav-link">Features</a>
-          <a href="" class="nav-link">How It Works</a>
-          <a href="" class="nav-link">Pricing</a>
+          <a href="#features-section" class="nav-link">Features</a>
+          <a href="#how-it-works" class="nav-link">How It Works</a>
+          <a href="#pricing" class="nav-link">Pricing</a>
         </div>
       </nav>
     </header>
 
     <section id="hero-section">
       <h1>Handcrafted, home-made masterpieces</h1>
-      <form class="email-form">
+      <form class="email-form" id="form" action="https://www.freecodecamp.com/email-submit">
         <input
           class="email-input"
           type="email"
           placeholder="Enter your email address"
+          id="email"
+          name="email"
         />
-         <button type="submit" class="form-button">GET STARTED</button>
+         <input value="GET STARTED" id="submit" type="submit" class="form-button"></input>
       </form>
      
     </section>
@@ -74,6 +76,21 @@
            For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument. 
           </p></div>
         </div>
+      </div>
+    </section>
+    <section id="how-it-works">
+      <iframe id="video" height="315" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+    </section>
+    <section id="pricing">
+      <div class="product" id="tenor">
+        <div class="level"> Tenor Trombone
+        </div>
+        <h2>$600</h2>
+      <ol>
+        <li>Price</li>
+        <li>Price</li>
+        <li>Price</li>
+      </ol>
       </div>
     </section>
     <script src="js/index.js"></script>
